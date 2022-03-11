@@ -1,0 +1,6 @@
+venv
+task_1/frequently_sold.csv
+task_1/pp-complete.csv
+*/__pycache__
+task_3/.env
+.env
