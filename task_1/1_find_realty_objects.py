@@ -6,8 +6,8 @@ def find_realty_objects(csv_db):
             for line in database:
                 cols = line.strip().split(',')
                 # похоже, что с 8 по 13 столбец идет адрес объекта, по нему можно сделать ключ для словаря
-                addresses = [cols[i] for i in range(7, 13)]
-                address = ", ".join(addresses).replace('"', '') + "\n"
+                items = [cols[i] for i in range(7, 13)]
+                address = ", ".join(items).replace('"', '') + "\n"
 
                 if address not in hash_dict:
                     hash_dict[address] = 1
